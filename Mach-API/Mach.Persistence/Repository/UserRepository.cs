@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Mach.DataAccess
+namespace Mach.DataAccess.Repository
 {
     public class UserRepository : BaseRepository<User, MachContext>, IUserRepository
     {
@@ -20,7 +20,7 @@ namespace Mach.DataAccess
             return await GetListAsync();
         }
 
-        public async Task<User> GetUserByIdAsync(int id)
+        public async Task<User> GetUserByIdAsync(Guid id)
         {
             return await GetEntities().FirstOrDefaultAsync(x => x.Id == id);
         }

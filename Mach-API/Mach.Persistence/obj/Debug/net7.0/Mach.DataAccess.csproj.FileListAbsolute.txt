@@ -48,3 +48,5 @@ C:\Users\ujipe\OneDrive\Documentos\GitHub\Mach\Mach-API\Mach.Persistence\obj\Deb
 C:\Users\ujipe\OneDrive\Documentos\GitHub\Mach\Mach-API\Mach.Persistence\obj\Debug\net7.0\Mach.DataAccess.pdb
 C:\Users\ujipe\OneDrive\Documentos\GitHub\Mach\Mach-API\Mach.Persistence\obj\Debug\net7.0\Mach.DataAccess.genruntimeconfig.cache
 C:\Users\ujipe\OneDrive\Documentos\GitHub\Mach\Mach-API\Mach.Persistence\obj\Debug\net7.0\ref\Mach.DataAccess.dll
+C:\Users\ujipe\OneDrive\Documentos\GitHub\Mach\Mach-API\Mach.Persistence\bin\Debug\net7.0\Common.Domain.dll
+C:\Users\ujipe\OneDrive\Documentos\GitHub\Mach\Mach-API\Mach.Persistence\bin\Debug\net7.0\Common.Domain.pdb

@@ -197,6 +197,19 @@
         "build": {
           "buildTransitive/net6.0/_._": {}
         }
+      },
+      "Common.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "7.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Common.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Common.Domain.dll": {}
+        }
       }
     }
   },
@@ -510,10 +523,16 @@
         "microsoft.extensions.primitives.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "Common.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Common.Models/Common.Domain.csproj",
+      "msbuildProject": "../Common.Models/Common.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
+      "Common.Domain >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 7.0.0"
     ]
   },
@@ -549,7 +568,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\ujipe\\OneDrive\\Documentos\\GitHub\\Mach\\Mach-API\\Common.Models\\Common.Domain.csproj": {
+              "projectPath": "C:\\Users\\ujipe\\OneDrive\\Documentos\\GitHub\\Mach\\Mach-API\\Common.Models\\Common.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

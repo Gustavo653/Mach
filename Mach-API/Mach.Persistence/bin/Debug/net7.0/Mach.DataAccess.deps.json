@@ -764,10 +764,19 @@
       },
       "Common.DataAccess/1.0.0": {
         "dependencies": {
+          "Common.Domain": "1.0.0",
           "Microsoft.EntityFrameworkCore": "7.0.0"
         },
         "runtime": {
           "Common.DataAccess.dll": {}
+        }
+      },
+      "Common.Domain/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "7.0.0"
+        },
+        "runtime": {
+          "Common.Domain.dll": {}
         }
       },
       "Common.Infrastructure/1.0.0": {
@@ -1337,6 +1346,11 @@
       "hashPath": "system.windows.extensions.5.0.0.nupkg.sha512"
     },
     "Common.DataAccess/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Common.Domain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

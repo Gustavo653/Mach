@@ -21,6 +21,7 @@ using Mach.Application;
 using Mach.Infrastructure;
 using Hangfire;
 using Common.Functions;
+using Mach.DataAccess.Repository;
 
 namespace Mach.API
 {

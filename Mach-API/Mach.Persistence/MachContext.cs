@@ -1,19 +1,26 @@
+using Common.DataAccess;
 using Mach.Domain;
 using Mach.Domain.Identity;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using System;
 
 namespace Mach.DataAccess
 {
-    public class MachContext : IdentityDbContext<User, Role, int,
-                                                       IdentityUserClaim<int>, UserRole, IdentityUserLogin<int>,
-                                                       IdentityRoleClaim<int>, IdentityUserToken<int>>
+    public class MachContext : IdentityDbContext<User, Role, Guid,
+                                                       IdentityUserClaim<Guid>, UserRole, IdentityUserLogin<Guid>,
+                                                       IdentityRoleClaim<Guid>, IdentityUserToken<Guid>>
     {
-        public MachContext(DbContextOptions<MachContext> options)  : base(options) { }
+        public MachContext(DbContextOptions<MachContext> options) : base(options) { }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
+
+            modelBuilder.Entity<User>(user =>
+            {
+                user.HasMany(x => x.UserTeams).WithOne(x => x.User);
+            });
 
             modelBuilder.Entity<UserRole>(userRole =>
                 {

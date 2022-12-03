@@ -11,7 +11,7 @@ namespace Mach.Infrastructure
     public interface IUserRepository : IRepositoryBase<User>
     {
         Task<IEnumerable<User>> GetUsersAsync();
-        Task<User> GetUserByIdAsync(int id);
+        Task<User> GetUserByIdAsync(Guid id);
         Task<User> GetUserByUserNameAsync(string userName);
     }
 }

@@ -2,16 +2,19 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Mach.Domain.Enum;
 using Microsoft.AspNetCore.Identity;
 
 namespace Mach.Domain.Identity
 {
-    public class User : IdentityUser<int>
+    public class User : IdentityUser<Guid>
     {
-        public string PrimeiroNome { get; set; }
-        public string UltimoNome { get; set; }
-        public string Descricao { get; set; }
-        public string ImagemURL { get; set; }
-        public IEnumerable<UserRole> UserRoles { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public string ImageUrl { get; set; }
+        public string Description { get; set; }
+        public virtual PersonType PersonType { get; set; }
+        public virtual IEnumerable<UserTeam> UserTeams { get; set; }
+        public virtual IEnumerable<UserRole> UserRoles { get; set; }
     }
 }
