@@ -1,0 +1,5 @@
+C:\Users\ujipe\OneDrive\Documentos\GitHub\Mach\Mach-API\ProEventos.Persistence\obj\Debug\net6.0\Mach.DataAccess.csproj.AssemblyReference.cache
+C:\Users\ujipe\OneDrive\Documentos\GitHub\Mach\Mach-API\ProEventos.Persistence\obj\Debug\net6.0\Mach.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ujipe\OneDrive\Documentos\GitHub\Mach\Mach-API\ProEventos.Persistence\obj\Debug\net6.0\Mach.DataAccess.AssemblyInfoInputs.cache
+C:\Users\ujipe\OneDrive\Documentos\GitHub\Mach\Mach-API\ProEventos.Persistence\obj\Debug\net6.0\Mach.DataAccess.AssemblyInfo.cs
+C:\Users\ujipe\OneDrive\Documentos\GitHub\Mach\Mach-API\ProEventos.Persistence\obj\Debug\net6.0\Mach.DataAccess.csproj.CoreCompileInputs.cache
