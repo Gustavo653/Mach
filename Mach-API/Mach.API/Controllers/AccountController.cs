@@ -1,11 +1,11 @@
-using System;
-using System.Threading.Tasks;
 using Common.Functions;
 using Mach.DTO;
 using Mach.Infrastructure;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System;
+using System.Threading.Tasks;
 
 namespace Mach.API.Controllers
 {

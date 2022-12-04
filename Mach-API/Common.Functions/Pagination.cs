@@ -1,6 +1,6 @@
-using System.Text.Json;
 using Common.Domain;
 using Microsoft.AspNetCore.Http;
+using System.Text.Json;
 
 namespace Common.Functions
 {

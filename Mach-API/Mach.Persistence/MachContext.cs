@@ -1,5 +1,3 @@
-using Common.DataAccess;
-using Mach.Domain;
 using Mach.Domain.Identity;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
@@ -16,11 +14,6 @@ namespace Mach.DataAccess
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-
-            modelBuilder.Entity<User>(user =>
-            {
-                user.HasMany(x => x.UserTeams).WithOne(x => x.User);
-            });
 
             modelBuilder.Entity<UserRole>(userRole =>
                 {

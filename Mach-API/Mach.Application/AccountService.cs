@@ -1,11 +1,11 @@
-using System;
-using System.Threading.Tasks;
 using AutoMapper;
 using Mach.Domain.Identity;
 using Mach.DTO;
 using Mach.Infrastructure;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using System;
+using System.Threading.Tasks;
 
 namespace Mach.Application
 {

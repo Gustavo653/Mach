@@ -20,9 +20,9 @@ namespace Common.DataAccess
         public virtual async Task InsertAsync(TType entity) => await GetContext().Set<TType>()
                                                                                  .AddAsync(entity);
         public virtual void Update(TType entity) => GetContext().Set<TType>()
-                                                        .Update(entity);
+                                                                .Update(entity);
         public virtual void UpdateRange(TType[] entity) => GetContext().Set<TType>()
-                                                                .UpdateRange(entity);
+                                                                       .UpdateRange(entity);
         public virtual void Delete(TType entity) => GetContext().Set<TType>()
                                                                 .Remove(entity);
         public virtual void DeleteRange(TType[] entity) => GetContext().Set<TType>()
@@ -32,7 +32,7 @@ namespace Common.DataAccess
         public virtual void Attach(TType entity) => GetContext().Set<TType>()
                                                                 .Attach(entity);
         public virtual void AttachRange(IEnumerable<TType> entity) => GetContext().Set<TType>()
-                                                                                 .AttachRange(entity);
+                                                                                  .AttachRange(entity);
         public virtual TType Clone(TType entity)
         {
             var ctx = GetContext();
