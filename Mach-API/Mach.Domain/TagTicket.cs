@@ -5,8 +5,9 @@ using System.Text;
 
 namespace Mach.Domain
 {
-    public class OwnerHistories : BaseEntity
+    public class TagTicket : BaseEntity
     {
+        public Tag Tag { get; set; }
         public Ticket Ticket { get; set; }
     }
 }

@@ -24,39 +24,57 @@
       <FileName>UserTeam.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Property Name="Team" />
       <Property Name="User" />
+      <Property Name="Team" />
     </ShowAsAssociation>
   </Class>
   <Class Name="Mach.Domain.Tag">
-    <Position X="14" Y="0.5" Width="1.5" />
+    <Position X="9.5" Y="1.75" Width="2.75" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Tag.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Mach.Domain.Ticket">
-    <Position X="14" Y="1.5" Width="1.5" />
+    <Position X="9.25" Y="7" Width="2.75" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAIAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Ticket.cs</FileName>
     </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="TagTickets" />
+      <Property Name="Actions" />
+    </ShowAsCollectionAssociation>
   </Class>
   <Class Name="Mach.Domain.Action">
-    <Position X="15.75" Y="1.25" Width="1.5" />
+    <Position X="14.75" Y="5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Action.cs</FileName>
     </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Ticket" />
+    </ShowAsAssociation>
   </Class>
   <Class Name="Mach.Domain.OwnerHistories">
-    <Position X="15.75" Y="2.25" Width="1.5" />
+    <Position X="15.75" Y="2.25" Width="3.25" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>OwnerHistories.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Enum Name="Mach.Domain.Enum.PersonType" Collapsed="true">
+  <Class Name="Mach.Domain.TagTicket">
+    <Position X="6.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAACAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TagTicket.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Tag" />
+      <Property Name="Ticket" />
+    </ShowAsAssociation>
+  </Class>
+  <Enum Name="Mach.Domain.Enum.PersonType">
     <Position X="15.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAEAAAA=</HashCode>

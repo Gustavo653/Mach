@@ -5,7 +5,8 @@ using System.Text;
 
 namespace Mach.Domain
 {
-    public class Action
+    public class Action : BaseEntity
     {
+        public Ticket Ticket { get; set; }
     }
 }

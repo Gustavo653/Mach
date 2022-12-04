@@ -5,7 +5,9 @@ using System.Text;
 
 namespace Mach.Domain
 {
-    public class Ticket
+    public class Ticket : BaseEntity
     {
+        public IEnumerable<TagTicket> TagTickets { get; set; }
+        public IEnumerable<Action> Actions { get; set; }
     }
 }
